@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Architecture — O3</title>
+  <meta name="description" content="System architecture for O3 — Orchestrator of Orbital Operations." />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <strong><a href="/index.html">O3</a></strong>
+      <nav>
+        <a href="/index.html#overview">Overview</a>
+        <a href="/pages/architecture.html">Architecture</a>
+        <a href="/pages/concepts.html">Concepts</a>
+        <a href="/pages/updates.html">Updates</a>
+        <a href="/index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero reveal in">
+      <div>
+        <div class="badge">System Design</div>
+        <h1>O3 Architecture</h1>
+        <p>
+          The system architecture of O3, showing how planning, scheduling, and execution components
+          work together to orchestrate orbital operations.
+        </p>
+      </div>
+      <figure>
+        <img src="/assets/img/figure1.svg" alt="O3 Architecture Diagram" />
+        <figcaption>High-level system architecture showing core components and data flows.</figcaption>
+      </figure>
+    </section>
+
+    <section class="card reveal">
+      <h2>Core Components</h2>
+      <div class="grid" style="margin-top:10px">
+        <div class="col-6">
+          <h3 style="margin:0 0 6px; font-size:16px">Planning Module</h3>
+          <p class="muted" style="margin:0">
+            Handles mission planning, trajectory optimization, and constraint analysis.
+            Generates feasible operation sequences based on orbital mechanics and mission objectives.
+          </p>
+        </div>
+        <div class="col-6">
+          <h3 style="margin:0 0 6px; font-size:16px">Scheduling Engine</h3>
+          <p class="muted" style="margin:0">
+            Allocates resources, manages timelines, and resolves conflicts between competing operations.
+            Ensures temporal and resource constraints are satisfied.
+          </p>
+        </div>
+        <div class="col-6">
+          <h3 style="margin:0 0 6px; font-size:16px">Execution Controller</h3>
+          <p class="muted" style="margin:0">
+            Monitors operation execution, handles real-time adjustments, and manages error recovery.
+            Provides feedback to planning and scheduling modules.
+          </p>
+        </div>
+        <div class="col-6">
+          <h3 style="margin:0 0 6px; font-size:16px">Orchestrator Core</h3>
+          <p class="muted" style="margin:0">
+            Central coordination layer that integrates all components, manages state, and ensures
+            consistent operation across the system.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card reveal">
+      <h2>Data Flow</h2>
+      <figure>
+        <img src="/assets/img/figure2.svg" alt="O3 Data Flow Diagram" />
+        <figcaption>Data flow between planning, scheduling, execution, and external systems.</figcaption>
+      </figure>
+    </section>
+
+    <section class="card reveal">
+      <h2>Integration Points</h2>
+      <ul class="muted" style="margin:0; padding-left:18px">
+        <li>Telemetry and command interfaces for spacecraft communication</li>
+        <li>Orbital mechanics libraries for trajectory calculations</li>
+        <li>Constraint solvers for optimization problems</li>
+        <li>Monitoring and logging systems for operation tracking</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> O3 — Orchestrator of Orbital Operations. Built as a static page.
+  </footer>
+
+  <script defer src="/assets/js/main.js"></script>
+</body>
+</html>
+

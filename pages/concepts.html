@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Concepts — O3</title>
+  <meta name="description" content="Key concepts and terminology for O3 — Orchestrator of Orbital Operations." />
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <strong><a href="/index.html">O3</a></strong>
+      <nav>
+        <a href="/index.html#overview">Overview</a>
+        <a href="/pages/architecture.html">Architecture</a>
+        <a href="/pages/concepts.html">Concepts</a>
+        <a href="/pages/updates.html">Updates</a>
+        <a href="/index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero reveal in">
+      <div>
+        <div class="badge">Terminology & Concepts</div>
+        <h1>O3 Concepts</h1>
+        <p>
+          Key terminology and concepts used in orbital operations orchestration,
+          from mission planning to execution monitoring.
+        </p>
+      </div>
+    </section>
+
+    <section class="card reveal">
+      <h2>Orbital Operations</h2>
+      <p class="muted">
+        Operations performed by spacecraft in orbit, including maneuvers, observations,
+        communications, and maintenance activities. Each operation has temporal, resource,
+        and constraint requirements that must be satisfied.
+      </p>
+    </section>
+
+    <section class="card reveal">
+      <h2>Orchestration</h2>
+      <p class="muted">
+        The coordination of multiple operations across time and resources to achieve
+        mission objectives while respecting physical, temporal, and operational constraints.
+        Orchestration involves planning, scheduling, and real-time execution management.
+      </p>
+    </section>
+
+    <section class="card reveal">
+      <h2>Constraint Satisfaction</h2>
+      <div class="grid" style="margin-top:10px">
+        <div class="col-6">
+          <h3 style="margin:0 0 6px; font-size:16px">Temporal Constraints</h3>
+          <p class="muted" style="margin:0">
+            Time windows, deadlines, and sequencing requirements that operations must satisfy.
+            Examples include launch windows, communication windows, and observation opportunities.
+          </p>
+        </div>
+        <div class="col-6">
+          <h3 style="margin:0 0 6px; font-size:16px">Resource Constraints</h3>
+          <p class="muted" style="margin:0">
+            Limitations on power, fuel, data storage, and other consumables that affect
+            which operations can be performed and when.
+          </p>
+        </div>
+        <div class="col-6">
+          <h3 style="margin:0 0 6px; font-size:16px">Physical Constraints</h3>
+          <p class="muted" style="margin:0">
+            Orbital mechanics, pointing requirements, and hardware limitations that
+            determine feasible operation sequences.
+          </p>
+        </div>
+        <div class="col-6">
+          <h3 style="margin:0 0 6px; font-size:16px">Operational Constraints</h3>
+          <p class="muted" style="margin:0">
+            Mission rules, safety protocols, and operational procedures that must be
+            followed during execution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card reveal">
+      <h2>Mission Planning</h2>
+      <p class="muted">
+        The process of determining what operations need to be performed to achieve
+        mission objectives. Planning considers long-term goals, available resources,
+        and environmental factors to generate operation sequences.
+      </p>
+    </section>
+
+    <section class="card reveal">
+      <h2>Operation Scheduling</h2>
+      <p class="muted">
+        The assignment of specific times and resources to planned operations.
+        Scheduling resolves conflicts, optimizes resource utilization, and ensures
+        all constraints are satisfied while maximizing mission value.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> O3 — Orchestrator of Orbital Operations. Built as a static page.
+  </footer>
+
+  <script defer src="/assets/js/main.js"></script>
+</body>
+</html>
+

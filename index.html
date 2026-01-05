@@ -3,102 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Project Title</title>
-  <meta name="description" content="Short description of the project." />
-  <style>
-    :root{
-      --bg:#0b0d12; --card:#121622; --text:#e8edf7; --muted:#aab4c5; --accent:#7aa7ff;
-      --max: 980px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0; font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: radial-gradient(1200px 700px at 20% -10%, rgba(122,167,255,.25), transparent 55%),
-                  radial-gradient(900px 500px at 90% 10%, rgba(130,255,202,.12), transparent 55%),
-                  var(--bg);
-      color:var(--text);
-    }
-    a{color:var(--accent); text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{
-      position:sticky; top:0; backdrop-filter: blur(10px);
-      background: rgba(11,13,18,.65); border-bottom:1px solid rgba(255,255,255,.06);
-      z-index:10;
-    }
-    .nav{
-      max-width:var(--max); margin:0 auto; padding:12px 18px;
-      display:flex; align-items:center; justify-content:space-between; gap:14px;
-    }
-    .nav strong{letter-spacing:.3px}
-    .nav a{color:var(--muted); margin-left:12px}
-    .nav a:hover{color:var(--text); text-decoration:none}
-    main{max-width:var(--max); margin:0 auto; padding:34px 18px 70px}
-    .hero{
-      display:grid; grid-template-columns: 1.2fr .8fr; gap:22px; align-items:start;
-      padding:18px; border:1px solid rgba(255,255,255,.07); border-radius:18px;
-      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-      box-shadow: 0 20px 60px rgba(0,0,0,.35);
-    }
-    .hero h1{margin:0 0 8px; font-size:40px; line-height:1.15}
-    .hero p{margin:0; color:var(--muted)}
-    .badge{
-      display:inline-flex; align-items:center; gap:8px;
-      font-size:13px; color:var(--muted);
-      border:1px solid rgba(255,255,255,.10);
-      padding:6px 10px; border-radius:999px;
-      background: rgba(255,255,255,.03);
-      margin-bottom:10px;
-    }
-    .card{
-      margin-top:18px; padding:18px;
-      border:1px solid rgba(255,255,255,.07); border-radius:18px;
-      background: rgba(18,22,34,.70);
-    }
-    h2{margin:0 0 10px; font-size:22px}
-    .grid{
-      display:grid; gap:14px;
-      grid-template-columns: repeat(12, 1fr);
-    }
-    .col-6{grid-column: span 6}
-    .col-12{grid-column: span 12}
-    figure{
-      margin:0; border-radius:14px; overflow:hidden;
-      border:1px solid rgba(255,255,255,.08);
-      background: rgba(255,255,255,.02);
-    }
-    figure img{width:100%; height:auto; display:block}
-    figcaption{padding:10px 12px; color:var(--muted); font-size:13px}
-    .btns{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:10px 12px; border-radius:12px; border:1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04); color:var(--text);
-    }
-    .btn.primary{
-      border-color: rgba(122,167,255,.35);
-      background: rgba(122,167,255,.18);
-    }
-    .muted{color:var(--muted)}
-    footer{max-width:var(--max); margin:0 auto; padding:20px 18px; color:var(--muted)}
-    @media (max-width: 860px){
-      .hero{grid-template-columns: 1fr}
-      .col-6{grid-column: span 12}
-      .hero h1{font-size:34px}
-    }
-
-    /* Simple, tasteful animation */
-    .reveal{opacity:0; transform: translateY(10px); transition: 700ms ease;}
-    .reveal.in{opacity:1; transform:none;}
-  </style>
+  <title>O3 — Orchestrator of Orbital Operations</title>
+  <meta name="description" content="O3 is a system for orchestrating orbital operations, coordinating planning, scheduling, and execution of spacecraft missions." />
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
   <header>
     <div class="nav">
-      <strong>Project Name</strong>
+      <strong>O3</strong>
       <nav>
         <a href="#overview">Overview</a>
-        <a href="#results">Results</a>
-        <a href="#media">Media</a>
+        <a href="/pages/architecture.html">Architecture</a>
+        <a href="/pages/concepts.html">Concepts</a>
+        <a href="/pages/updates.html">Updates</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -108,74 +25,86 @@
     <section class="hero reveal in">
       <div>
         <div class="badge">Status: Ongoing • 2026</div>
-        <h1>Project Title (One sentence value proposition)</h1>
+        <h1>O3 — Orchestrator of Orbital Operations</h1>
         <p>
-          A clear, non-technical summary of what you built and why it matters.
-          Keep it to 2–3 lines.
+          A comprehensive system for coordinating planning, scheduling, and execution of orbital operations.
+          O3 enables autonomous mission management by orchestrating complex operations while satisfying
+          temporal, resource, and physical constraints.
         </p>
 
         <div class="btns">
-          <a class="btn primary" href="#" target="_blank" rel="noreferrer">Paper / Preprint</a>
-          <a class="btn" href="#" target="_blank" rel="noreferrer">Code</a>
-          <a class="btn" href="#" target="_blank" rel="noreferrer">Demo</a>
+          <a class="btn primary" href="/pages/architecture.html">Architecture</a>
+          <a class="btn" href="/pages/concepts.html">Concepts</a>
+          <a class="btn" href="/pages/updates.html">Updates</a>
         </div>
 
         <p class="muted" style="margin-top:14px">
-          Keywords: imaging • sensing • optimization • hardware/software co-design
+          Keywords: orbital operations • mission planning • scheduling • constraint satisfaction • autonomy
         </p>
       </div>
 
       <figure>
-        <img src="assets/hero.jpg" alt="Hero figure" />
-        <figcaption>Hero image: system diagram, key result, or a representative figure.</figcaption>
+        <img src="/assets/img/hero.svg" alt="O3 System Overview" />
+        <figcaption>O3 system architecture showing core orchestration components and data flows.</figcaption>
       </figure>
     </section>
 
     <section id="overview" class="card reveal">
       <h2>Overview</h2>
       <p class="muted">
-        Explain the problem, your approach, and what makes it different. Use short paragraphs.
+        Orbital operations require careful coordination of planning, scheduling, and execution to achieve
+        mission objectives while respecting complex constraints. O3 provides an integrated orchestration
+        system that automates this coordination, enabling more efficient and reliable mission operations.
       </p>
       <div class="grid" style="margin-top:10px">
         <div class="col-6">
           <h3 style="margin:0 0 6px; font-size:16px">Problem</h3>
-          <p class="muted" style="margin:0">What gap exists? Who cares? What constraints matter?</p>
+          <p class="muted" style="margin:0">
+            Orbital operations involve complex interactions between planning, scheduling, and execution.
+            Manual coordination is error-prone and doesn't scale. Systems need to handle temporal constraints,
+            resource limitations, and real-time adjustments autonomously.
+          </p>
         </div>
         <div class="col-6">
           <h3 style="margin:0 0 6px; font-size:16px">Approach</h3>
-          <p class="muted" style="margin:0">Your main idea, in plain language, plus 1–2 specifics.</p>
+          <p class="muted" style="margin:0">
+            O3 integrates planning, scheduling, and execution into a unified orchestration system.
+            It uses constraint-based optimization to generate feasible operation sequences and
+            adaptive scheduling to handle dynamic conditions and resource conflicts.
+          </p>
         </div>
       </div>
     </section>
 
     <section id="results" class="card reveal">
-      <h2>Key results</h2>
+      <h2>Key Results</h2>
       <ul class="muted" style="margin:0; padding-left:18px">
-        <li>Result 1 with a number (e.g., “2× faster reconstruction”).</li>
-        <li>Result 2 with a comparison (baseline vs yours).</li>
-        <li>Result 3 with real-world implication.</li>
+        <li>Automated orchestration reduces manual planning time by enabling real-time operation coordination.</li>
+        <li>Constraint satisfaction ensures all temporal, resource, and physical constraints are respected during execution.</li>
+        <li>Integrated planning and scheduling improves resource utilization and mission efficiency.</li>
+        <li>Adaptive execution management enables dynamic replanning in response to changing conditions.</li>
       </ul>
     </section>
 
     <section id="media" class="card reveal">
-      <h2>Figures / media</h2>
+      <h2>System Diagrams</h2>
       <div class="grid" style="margin-top:10px">
         <div class="col-6">
           <figure>
-            <img src="assets/figure1.jpg" alt="Figure 1" />
-            <figcaption>Figure 1 — short caption explaining what’s important.</figcaption>
+            <img src="/assets/img/figure1.svg" alt="Architecture Diagram" />
+            <figcaption>Architecture — Core components and their relationships in the O3 system.</figcaption>
           </figure>
         </div>
         <div class="col-6">
           <figure>
-            <img src="assets/figure2.jpg" alt="Figure 2" />
-            <figcaption>Figure 2 — short caption with context.</figcaption>
+            <img src="/assets/img/figure2.svg" alt="Data Flow Diagram" />
+            <figcaption>Data Flow — Information exchange between planning, scheduling, and execution modules.</figcaption>
           </figure>
         </div>
         <div class="col-12">
           <figure>
-            <img src="assets/figure3.jpg" alt="Figure 3" />
-            <figcaption>Figure 3 — a larger image for a main qualitative result.</figcaption>
+            <img src="/assets/img/figure3.svg" alt="System Overview" />
+            <figcaption>System Overview — Complete O3 architecture showing planning, scheduling, execution, and orchestrator core integration.</figcaption>
           </figure>
         </div>
       </div>
@@ -184,33 +113,20 @@
     <section id="contact" class="card reveal">
       <h2>Contact</h2>
       <p class="muted" style="margin:0">
-        Name • affiliation • email • links.
+        For questions, collaboration opportunities, or more information about O3.
       </p>
       <p style="margin:10px 0 0">
-        <a href="mailto:you@domain.com">you@domain.com</a> ·
-        <a href="#" target="_blank" rel="noreferrer">Google Scholar</a> ·
+        <a href="mailto:contact@example.com">contact@example.com</a> ·
         <a href="#" target="_blank" rel="noreferrer">GitHub</a> ·
-        <a href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="#" target="_blank" rel="noreferrer">Documentation</a>
       </p>
     </section>
   </main>
 
   <footer>
-    © <span id="y"></span> Project Name. Built as a static page.
+    © <span id="y"></span> O3 — Orchestrator of Orbital Operations. Built as a static page.
   </footer>
 
-  <script>
-    // Year
-    document.getElementById("y").textContent = new Date().getFullYear();
-
-    // Reveal-on-scroll animation (lightweight, no libraries)
-    const els = document.querySelectorAll(".reveal");
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) e.target.classList.add("in");
-      });
-    }, { threshold: 0.12 });
-    els.forEach(el => io.observe(el));
-  </script>
+  <script defer src="/assets/js/main.js"></script>
 </body>
 </html>

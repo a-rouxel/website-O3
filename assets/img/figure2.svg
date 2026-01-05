@@ -1,0 +1,19 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#121622"/>
+  <text x="300" y="200" font-family="system-ui, sans-serif" font-size="18" fill="#aab4c5" text-anchor="middle" dominant-baseline="middle">
+    Data Flow Diagram
+  </text>
+  <ellipse cx="150" cy="100" rx="60" ry="40" fill="none" stroke="#7aa7ff" stroke-width="2"/>
+  <ellipse cx="300" cy="200" rx="60" ry="40" fill="none" stroke="#7aa7ff" stroke-width="2"/>
+  <ellipse cx="450" cy="100" rx="60" ry="40" fill="none" stroke="#7aa7ff" stroke-width="2"/>
+  <ellipse cx="300" cy="300" rx="60" ry="40" fill="none" stroke="#7aa7ff" stroke-width="2"/>
+  <path d="M 150 100 L 250 180" stroke="#7aa7ff" stroke-width="1" opacity="0.5" marker-end="url(#arrowhead)"/>
+  <path d="M 450 100 L 350 180" stroke="#7aa7ff" stroke-width="1" opacity="0.5" marker-end="url(#arrowhead)"/>
+  <path d="M 300 240 L 300 260" stroke="#7aa7ff" stroke-width="1" opacity="0.5" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7aa7ff" opacity="0.5"/>
+    </marker>
+  </defs>
+</svg>
+
